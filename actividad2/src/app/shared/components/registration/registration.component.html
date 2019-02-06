@@ -1,0 +1,16 @@
+<p>
+  Username:
+  <input type="text" #userInput>  
+</p>
+<p>
+  Password:
+  <input type="text" #pwdInput>  
+</p>
+<p>
+    E-Mail:
+    <input type="text" #emailInput>  
+  </p>
+
+<p>
+  <button (click)="btnRegisterOnClick(userInput.value, pwdInput.value, emailInput.value)">Register</button>
+</p>

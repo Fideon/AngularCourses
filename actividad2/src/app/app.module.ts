@@ -3,14 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BioComponent } from './bio/bio.component';
+import { IdsComponent } from './ids/ids.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { RegistrationComponent } from './shared/components/registration/registration.component';
+
+const appRoutes: AppRoutingModule = [
+  {path: 'bio', component: BioComponent},
+  {path: 'ids', component: IdsComponent},
+  {path: 'reg', component: RegistrationComponent},
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BioComponent,
+    IdsComponent,
+    HeaderComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
