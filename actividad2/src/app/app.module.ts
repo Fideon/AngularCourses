@@ -8,6 +8,8 @@ import { IdsComponent } from './ids/ids.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { RegistrationComponent } from './shared/components/registration/registration.component';
 
+import { FormsModule } from '@angular/forms';
+
 const appRoutes: AppRoutingModule = [
   {path: 'bio', component: BioComponent},
   {path: 'ids', component: IdsComponent},
@@ -25,6 +27,7 @@ const appRoutes: AppRoutingModule = [
   imports: [
     BrowserModule,
     AppRoutingModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
