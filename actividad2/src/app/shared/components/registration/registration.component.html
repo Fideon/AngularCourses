@@ -59,6 +59,13 @@
 
 <p></p>
 
+<div class="form-group">
+  <select name="paises" class="form-control" [(ngModel)]="paises" (ngModelChange)="cambio($event)">
+    <option *ngFor="let pais of paises">{{pais}}</option>
+  </select>
+  {{pais}}
+</div>
+
 <p></p>
 
 <div class="form-group">

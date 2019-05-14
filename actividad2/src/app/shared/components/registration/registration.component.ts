@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class RegistrationComponent implements OnInit {
     estado: String;
+    pais: String;
+    paises = ["Guatemala", "Belize", "ElSalvador", "Honduras", "Nicaragua"];
     Guatemala = ["Alta Verapaz", "Baja Verapaz", "Chimaltenango", "Chiquimula", "El Progreso"];
     Belize = ["Belize", "Cayo", "Corozal", "Orange Walk", "Stann Creek", "Toledo"];
     ElSalvador = ["Ahuachapan", "Cabanas", "Cuscatlan", "La Libertad", "Chalatenango"];
@@ -23,6 +25,12 @@ export class RegistrationComponent implements OnInit {
   {
     alert("Password: " + pwd + "\nEmail: " + email + "\n\nRegistration successful");
   }
+
+  cambio(event)
+  {
+    alert(1);
+  }
+
   constructor() { }
 
   ngOnInit() {
